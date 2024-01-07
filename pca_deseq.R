@@ -48,10 +48,10 @@ row.names(count) = count$Geneid...1
 
 #也有用 rowSums(counts(dds)) >= 10, 目的：过滤低表达（似乎10是常用的标准）
 
-# 分两组，一组1：6，一组c(1:3,7:9)，生成两次
 
-# count1 <- count[-1][apply(count[-1],1,sum)>=10,c(1:6)]
- count1 <- count[-1][apply(count[-1],1,sum)>=10,c(1:3,7:9)]
+
+count1 <- count[-1][apply(count[-1],1,sum)>=10,c(1:6)]
+
 
 
 # 分组采样
@@ -89,5 +89,3 @@ count2 <- counts(dds, normalized=TRUE)
 count3 <- cbind(row.names(count2),count2)
 
 write.table(res2,"/home/yangyb/yangyb/Erythro_APA_Liu/linuxnd/analysis/expression/pabpc1_1_vs_control_deseq_raw.txt",row.names = F)
-
-write.table(res1,"/home/yangyb/yangyb/Erythro_APA_Liu/linuxnd/analysis/expression/pabpc1_2_vs_control_deseq_raw.txt",row.names = F)
