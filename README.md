@@ -1,1 +1,2 @@
 # Erythrocyte-APA
+Early-stage Erythrocyte Differentiation APA Analysis" is a comprehensive study focused on the alternative polyadenylation (APA) patterns occurring during the early differentiation stages of erythrocytes, or red blood cells. This research delves into the molecular mechanisms underlying erythropoiesis, particularly examining how APA influences gene expression and the functional maturation of erythroid cells. 
